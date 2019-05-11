@@ -1,0 +1,212 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.15em;
+    font-family: 'Roboto' , sans-serif;
+    background-color: #2ecc71;
+    color: #5a5a5a;
+    font-weight: 100;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.green {
+    color: #2ecc71;
+}
+
+p {
+    padding: 1.5em 0;
+    width: 70%;
+}
+
+.home, .features, .meal-time, .diet, footer {
+    padding: 6em 0;
+}
+
+.diet {
+    padding: 3em 0 0 0;
+}
+
+.diet p {
+    padding-bottom: 5em;
+    margin: 0 auto;
+}
+
+header {
+    padding: 2em 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo__nav {
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.header__wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 0 0 0.6em;
+}
+
+.features, .meal-time {
+    background-color: #fff;
+}
+
+.diet {
+    background-color: #f9f9f9;
+    background-image: url("../img/diet-bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3em 0 0 0;
+}
+
+.diet__wrapper {
+    flex-direction: column;
+}
+
+.diet__content {
+    text-align: center;
+}
+
+.home {
+    background-image: url("../img/home-bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3em 0 0 0;
+}
+
+
+.home__content__text, footer {
+    color: #fff;
+}
+
+.home__content__logo img {
+    max-width: 15%;
+}
+
+.home__phone-thumb {
+    display: flex;
+    align-items: flex-end;
+    width: 40%;
+}
+
+h1, h2 {
+    font-weight: 100;
+    letter-spacing: 0.12rem;
+}
+.features__phone-thumb,
+.features__content,
+.meal-time__content,
+.meal-time__thumb {
+    flex: 1;
+}
+
+
+h1 {
+    color: #5a5a5a;
+    margin: 0.85em 0 0 0;
+}
+
+.home h1, footer h1 {
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.wrapper > div[class*="content"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__content {
+    width: 60%;
+}
+
+.home__wrapper {
+    justify-content: space-between;
+}
+
+.diet__phone-thumb {
+    text-align: center;
+}
+
+.diet__phone-thumb img {
+    max-width: 70%;
+}
+footer {
+    background-image: url(../img/footer-bg.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.get-app {
+    font-weight: bold;
+    padding: 0.3em 1em;
+    background-color: #fff;
+    color: #2ecc71;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.get-app:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.footer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media all and (max-width: 1230px) {
+    .wrapper {
+        max-width: 70%;
+    }
+}
+
+@media all and (max-width: 930px) {
+    .wrapper {
+        max-width: 90%;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .home__wrapper,
+    .features__wrapper,
+    .diet__wrapper,
+    .meal-time__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
