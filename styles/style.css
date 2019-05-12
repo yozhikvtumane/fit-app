@@ -225,7 +225,7 @@ footer {
         text-align: center;
     }
 
-    .features, .meal-time {
+    .features, .meal-time, footer {
         padding: 2em 0;
     }
     .home__content {
