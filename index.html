@@ -78,5 +78,20 @@
             <a href="" class="get-app">Get App</a>
         </div>
     </footer>
+    <script>
+        const navToggle = document.querySelector('.toggle__menu')
+        const menu = document.querySelector('.menu')
+
+        function toggleMenu () {
+            menu.classList.toggle('menu-open')
+        }
+        
+        navToggle.addEventListener('click' , toggleMenu)
+        window.addEventListener('resize' , (e) => {
+            if (e.target.innerWidth > 720 && menu.classList.toString().includes('menu-open')) {
+                toggleMenu()
+            }
+        })
+    </script>
 </body>
 </html>

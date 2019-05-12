@@ -56,6 +56,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 .logo__nav {
     font-weight: 900;
     font-size: 1.8rem;
@@ -65,6 +66,12 @@ a:hover {
 .header__wrapper {
     justify-content: space-between;
     align-items: center;
+}
+
+/* .logo {order: 1;} */
+
+.menu {
+    display: flex;
 }
 
 .menu ul li {
@@ -232,12 +239,40 @@ footer {
         width: 100%;
         padding-bottom: 0.6em;
     }
+    
+    .header__wrapper {
+        flex-wrap: wrap;
+    }
+    .header__wrapper > a {
+        text-align: right;
+    }
 
+    .logo {
+        /* flex: 1; */
+    }
+    
     .toggle__menu {
-        display: inline;
+        display: flex;
+        /* flex: 1; */
     }
 
     .menu {
         display: none;
+        flex: 1 100%;
+        justify-content: center;
+    }
+    .menu-open {
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        text-align: center;
+        padding: 0.7em 0;
+        font-size: 1.25em;
     }
 }
