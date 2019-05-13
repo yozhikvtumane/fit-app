@@ -87,8 +87,20 @@
         }
         
         navToggle.addEventListener('click' , toggleMenu)
+
+        menu.addEventListener('focusout' , (e)=>{
+            console.log(e.target)
+        })
+        
+        document.addEventListener('click', (e)=>{
+            if (e.target.matches('a') || e.target.matches('nav') || e.target.matches('li') || e.target.matches('ul')) return 
+            if (menu.classList.contains('menu-open')) {
+                toggleMenu()
+            }
+        })
+
         window.addEventListener('resize' , (e) => {
-            if (e.target.innerWidth > 720 && menu.classList.toString().includes('menu-open')) {
+            if (e.target.innerWidth > 720 && menu.classList.contains('menu-open')) {
                 toggleMenu()
             }
         })

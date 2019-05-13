@@ -57,11 +57,16 @@ a:hover {
     text-decoration: underline;
 }
 
+.logo:hover a {
+    text-decoration: none;
+}
+
 .logo__nav {
     font-weight: 900;
     font-size: 1.8rem;
     font-style: italic;
 }
+
 
 .header__wrapper {
     justify-content: space-between;
@@ -245,10 +250,6 @@ footer {
     }
     .header__wrapper > a {
         text-align: right;
-    }
-
-    .logo {
-        /* flex: 1; */
     }
     
     .toggle__menu {
