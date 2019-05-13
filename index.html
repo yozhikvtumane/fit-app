@@ -87,10 +87,6 @@
         }
         
         navToggle.addEventListener('click' , toggleMenu)
-
-        menu.addEventListener('focusout' , (e)=>{
-            console.log(e.target)
-        })
         
         document.addEventListener('click', (e)=>{
             if (e.target.matches('a') || e.target.matches('nav') || e.target.matches('li') || e.target.matches('ul')) return 
